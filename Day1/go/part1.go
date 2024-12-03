@@ -10,11 +10,11 @@ import (
 	"strings"
 )
 
-func main() {
+func part1() {
 	fmt.Println("Hello, World!")
 	// Open File
-	//file, err := os.Open("sample.txt")
-	file, err := os.Open("input.txt")
+	//file, err := os.Open("../sample.txt")
+	file, err := os.Open("../input.txt")
 	if err != nil {
 		log.Fatal("Skill Issue: ", err)
 	}
@@ -69,5 +69,4 @@ func main() {
 	}
 
 	fmt.Println(result)
-
 }
