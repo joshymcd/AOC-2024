@@ -1,6 +1,6 @@
-const fs = require('fs');
+import fs from 'node:fs';
 
-const data = fs.readFileSync("./typescript/day1/input.txt", "utf8");
+const data = fs.readFileSync("../input.txt", "utf8");
 
 const inputArray = data.toString().split("\n");
 
