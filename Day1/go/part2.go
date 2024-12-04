@@ -42,7 +42,19 @@ func part2() {
 		right = append(right, rInt)
 	}
 
-	fmt.Println(left)
-	fmt.Println(right)
+	simScore := 0
 
+	for _, v := range left {
+
+		for _, vv := range right {
+			tempSimScore := 0
+			if v == vv {
+				tempSimScore += 1
+			}
+			tempSimScore = tempSimScore * v
+			simScore += tempSimScore
+		}
+	}
+
+	fmt.Println("Part 2: ", simScore)
 }
